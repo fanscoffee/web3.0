@@ -1,0 +1,5 @@
+@use '/src/styles/abstracts/' as *;
+
+.header {
+  border: 1px solid var(--clr-dark-green);
+}

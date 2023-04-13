@@ -1,7 +1,7 @@
 import './Footer.scss'
 
 function Footer() {
-  return <div className="footer">Footer</div>
+  return <div className="border-solid  border-t border-gray-300 ">Footer</div>
 }
 
 export default Footer

@@ -65,17 +65,12 @@ function Footer() {
             </h6>
             <p className="mb-4">
               <a href="#!" className="text-neutral-600 dark:text-neutral-200">
-                Pedidos
-              </a>
-            </p>
-            <p className="mb-4">
-              <a href="#!" className="text-neutral-600 dark:text-neutral-200">
                 Nosotros
               </a>
             </p>
             <p className="mb-4">
               <a href="#!" className="text-neutral-600 dark:text-neutral-200">
-                Formulario de contacto
+                Contacto
               </a>
             </p>
           </div>
@@ -112,7 +107,7 @@ function Footer() {
               <a href="tel:+34628984413">+ 34 628 984 413</a>
             </p>
           </div>
-          <div className="text-center">
+          <div className="ps-7 text-center">
             <iframe
               title="google"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.315829639117!2d-3.6768293491456254!3d40.40185366436702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4227f0d51d1505%3A0xbfa018432bd3d379!2sFans%20Coffee%20%26%20Bakery!5e0!3m2!1ses!2ses!4v1620941613287!5m2!1ses!2ses"

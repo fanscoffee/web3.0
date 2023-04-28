@@ -4,10 +4,10 @@ function Legal() {
       <div>
         <h1 className="my-5 text-center text-3xl font-bold">AVISO LEGAL</h1>
         <p className="my-2">
-          En FANS COFFEE FRIENDS, S.L.L. consideramos que la privacidad de nuestros
-          clientes y usuarios debe ser primordial. Por esta razón aplicamos una
-          política de transparencia a todos nuestros procesos para que los
-          usuarios estén siempre informados y tengan control sobre su
+          En FANS COFFEE FRIENDS, S.L.L. consideramos que la privacidad de
+          nuestros clientes y usuarios debe ser primordial. Por esta razón
+          aplicamos una política de transparencia a todos nuestros procesos para
+          que los usuarios estén siempre informados y tengan control sobre su
           privacidad.
         </p>
         <p className="my-2">
@@ -16,7 +16,9 @@ function Legal() {
           y los usuarios del mismo.
         </p>
 
-        <h3 className="my-2">¿QUIÉN ES EL RESPONSABLE DEL TRATAMIENTO DE SUS DATOS?</h3>
+        <h3 className="my-2">
+          ¿QUIÉN ES EL RESPONSABLE DEL TRATAMIENTO DE SUS DATOS?
+        </h3>
         <p className="my-2">
           En cumplimiento del Capítulo II de la ley 34/2002, LSSICE, y del art.
           13.1a del Reglamento (UE) 2016/679 y de la normativa vigente sobre
@@ -191,7 +193,6 @@ function Legal() {
             no solicite su supresión.
           </li>
           <li>
-            
             <strong>Enviarle información:</strong> estos se mantendrán en el
             sistema de forma indefinida en tanto el interesado no solicite su
             supresión.

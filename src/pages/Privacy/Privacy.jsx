@@ -2,7 +2,7 @@ import Helmet from 'react-helmet'
 
 function Privacy() {
   return (
-    <div className="container m-auto mt-[5rem]  lg:mt-[8rem] mb-5 max-w-[800px] pt-7">
+    <div className="container m-auto mt-[5rem]  lg:mt-[7rem] mb-5 max-w-[800px] pt-7">
       <Helmet>
         <title>Privacy Policy - Fans Coffee Bakery</title>
         <meta name="title" content="Privacy Policy - Fans Coffee & Bakery" />

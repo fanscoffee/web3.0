@@ -62,7 +62,7 @@ export default function Contact() {
     }
   }
   return (
-    <div className="my-3">
+    <div className="mt-[5rem]  lg:mt-[7rem] mb-5">
       <Helmet>
         <title>Contacto General - Fans Coffee & Bakery</title>
         <meta name="title" content="Contacto General - Fans Coffee & Bakery" />

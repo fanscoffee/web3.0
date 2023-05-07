@@ -31,7 +31,10 @@ function Header() {
         </div>
         <div
           onClick={() => setOpen(!open)}
+          onKeyDown={() => setOpen(!open)}
           className="absolute right-8 top-6 cursor-pointer pt-6 text-3xl md:hidden"
+          role="button"
+          tabIndex="0"
         >
           <ion-icon name={open ? 'close' : 'menu'} />
         </div>
@@ -47,15 +50,17 @@ function Header() {
               </Link>
             </li>
           ))}
-          <li
-            onClick={handleMode}
-            className="my-7 inline-block text-xl hover:text-green md:my-0 md:ml-8"
-          >
-            {darkMode ? (
-              <FaSun size="24" className="top-navigation-icon" />
-            ) : (
-              <FaMoon size="24" className="top-navigation-icon" />
-            )}
+          <li>
+            <button
+              onClick={handleMode}
+              className="my-7 inline-block text-xl hover:text-green md:my-0 md:ml-8"
+            >
+              {darkMode ? (
+                <FaSun size="24" className="top-navigation-icon" />
+              ) : (
+                <FaMoon size="24" className="top-navigation-icon" />
+              )}
+            </button>
           </li>
         </ul>
       </div>

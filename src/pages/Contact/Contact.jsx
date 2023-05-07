@@ -62,13 +62,13 @@ export default function Contact() {
     }
   }
   return (
-    <div className="mt-[5rem]  lg:mt-[7rem] mb-5">
+    <div className="mb-5  mt-[5rem] lg:mt-[7rem]">
       <Helmet>
         <title>Contacto General - Fans Coffee & Bakery</title>
         <meta name="title" content="Contacto General - Fans Coffee & Bakery" />
         <meta
           name="description"
-          content="Pagina de contacto donde podras encontrar la información para comunicarte con nosotros."
+          content="Pagina de contacto donde podrás encontrar la información para comunicarte con nosotros."
         />
         <link rel="canonical" href="https://fanscoffeebakery.com/contacto" />
       </Helmet>
@@ -78,20 +78,34 @@ export default function Contact() {
           className="mx-6 py-10 text-center md:text-left"
         >
           <div className="mb-3">
-            <h3 className="text-xl font-extrabold mt-6">
+            <h3 className="mt-6 text-xl font-extrabold">
               FORMULARIO DE CONTACTO
             </h3>
+            <div className="mb 3">
+              <label htmlFor="tipo" className="text-md my-2 block font-medium">
+                Tipo
+              </label>
+              <select
+                name="tipo"
+                id="tipo"
+                defaultChecked
+                className="focus:shadow-outline w-full rounded border py-1 leading-tight shadow focus:outline-none"
+              >
+                <option value="consulta">Consulta</option>
+                <option value="reserva">Reserva</option>
+              </select>
+            </div>
             <div className="mb-3">
               <label
                 htmlFor="nombre"
-                className="block text-md font-medium my-2"
+                className="text-md my-2 block font-medium"
               >
                 Ingresa tu nombre
               </label>
               <input
                 type="text"
                 name="nombre"
-                className="border rounded appearance-none shadow w-full py-1 leading-tight focus:outline-none focus:shadow-outline"
+                className="focus:shadow-outline w-full  rounded border py-1 leading-tight shadow focus:outline-none"
                 id="nombre"
                 autoComplete="off"
                 placeholder="Nombre"
@@ -101,7 +115,7 @@ export default function Contact() {
             <div className="mb-3">
               <label
                 htmlFor="telefono"
-                className="block text-md font-medium my-2"
+                className="text-md my-2 block font-medium"
               >
                 Ingresa tu movíl
               </label>
@@ -113,15 +127,15 @@ export default function Contact() {
                 value={value}
                 onChange={setValue}
                 name="telefono"
-                className="border rounded appearance-none shadow w-full py-1 leading-tight focus:outline-none  focus:shadow-outline"
+                className="focus:shadow-outline w-full  rounded border py-1 leading-tight shadow  focus:outline-none"
               />
             </div>
-            <label htmlFor="email" className="block text-md font-medium my-2">
+            <label htmlFor="email" className="text-md my-2 block font-medium">
               Ingresa tu correo electrónico
             </label>
             <input
               type="email"
-              className="border rounded appearance-none shadow w-full py-1 leading-tight focus:outline-none  focus:shadow-outline"
+              className="focus:shadow-outline w-full  rounded border py-1 leading-tight shadow  focus:outline-none"
               id="email"
               aria-describedby="emailHelp"
               name="email"
@@ -131,16 +145,16 @@ export default function Contact() {
             />
           </div>
           <div className="mb-3">
-            <label htmlFor="mensaje" className="block text-md font-medium my-2">
-              Ingresa tu consulta
+            <label htmlFor="mensaje" className="text-md my-2 block font-medium">
+              ¿Podrías proporcionarnos más información al respecto?
             </label>
             <textarea
-              className="border rounded appearance-none shadow w-full py-1 leading-tight focus:outline-none focus:shadow-outline"
+              className="focus:shadow-outline w-full  rounded border py-1 leading-tight shadow focus:outline-none"
               autoComplete="off"
               id="mensaje"
               name="mensaje"
               rows="3"
-              placeholder="Consulta"
+              placeholder="Información"
               required
             ></textarea>
           </div>
@@ -149,7 +163,7 @@ export default function Contact() {
             <input
               type="checkbox"
               value="1"
-              className="text-md font-medium my-2 mx-1 checked:bg-blue-500 indeterminate:bg-gray-300 default:ring-2"
+              className="text-md indeterminate:bg-gray-300 mx-1 my-2 font-medium default:ring-2 checked:bg-blue-500"
               id="contactFormAgree"
               onChange={check}
               required
@@ -158,7 +172,7 @@ export default function Contact() {
               Doy mi consentimiento para el tratamiento de los datos personales
               que facilito. He leído y acepto la{' '}
               <a
-                href="./aviso-legal"
+                href="/privacidad"
                 className="text-emerald-600 hover:text-emerald-500 dark:text-emerald-400"
               >
                 Política de privacidad
@@ -169,7 +183,7 @@ export default function Contact() {
 
           <button
             type="submit"
-            className="px-8 py-4 font-small text-sm text-white rounded-full bg-emerald-700  hover:bg-emerald-800 hover:text-md hover:font-medium transition-all"
+            className="font-small hover:text-md rounded-full bg-emerald-700 px-8 py-4 text-sm  text-white transition-all hover:bg-emerald-800 hover:font-medium"
             onClick={showAlert}
           >
             ENVIAR
@@ -177,12 +191,12 @@ export default function Contact() {
         </form>
 
         <div className="mx-6 py-10">
-          <h3 className="text-xl font-extrabold mt-6">
-            INFORMACIÓN DE CONTACTO{' '}
+          <h3 className="mt-6 text-xl font-extrabold">
+            INFORMACIÓN DE CONTACTO
           </h3>
           <p className="mt-2">
             Si deseas contactar con nosotros, puedes hacerlo de las formas
-            habituales.{' '}
+            habituales.
           </p>
           <p className="mt-2">
             <strong>Dirección:</strong> Calle Doctor Esquerdo 180, 28007, Madrid
@@ -196,8 +210,8 @@ export default function Contact() {
             className="my-2"
           ></iframe>
 
-          <p className="border-y my-2 py-2">
-            <strong>Teléfono:</strong>{' '}
+          <p className="my-2 border-y py-2">
+            <strong>Teléfono:</strong>
             <a href="tel:+34628984413">(+34) 628 984 413</a>
           </p>
         </div>

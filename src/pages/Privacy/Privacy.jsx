@@ -1,16 +1,21 @@
 import Helmet from 'react-helmet'
+import { useEffect } from 'react'
 
 function Privacy() {
+  useEffect(() => {
+    window.scroll(0, 0)
+  }, [])
+
   return (
-    <div className="container m-auto mt-[5rem]  lg:mt-[7rem] mb-5 max-w-[800px] pt-7">
+    <div className="container m-auto mb-5  mt-[5rem] max-w-[800px] pt-7 lg:mt-[7rem]">
       <Helmet>
-        <title>Privacy Policy - Fans Coffee Bakery</title>
-        <meta name="title" content="Privacy Policy - Fans Coffee & Bakery" />
+        <title>Privacidad - Fans Coffee & Bakery</title>
+        <meta name="title" content="Privacidad - Fans Coffee & Bakery" />
         <meta
           name="description"
-          content="An overview of the privacy policies of Fans Coffee & Bakery with information on their website. By visiting this website, you accept following Terms of Use"
+          content="Una visión general de las políticas de privacidad de Fans Coffee & Bakery con información sobre su sitio web. Al visitar este sitio web, usted acepta las siguientes condiciones de uso."
         />
-        <link rel="canonical" href="https://fanscoffeebakery.com/privacy" />
+        <link rel="canonical" href="https://fanscoffeebakery.com/privacidad" />
       </Helmet>
       <div className="mx-4">
         <h1 className="my-5 text-center text-3xl font-bold">
@@ -33,7 +38,7 @@ function Privacy() {
           empresas, y Fans Coffee & Bakery hará cumplir todos los acuerdos de
           privacidad para proteger la información de nuestros clientes.
         </p>
-        <p>
+        <p className="my-4">
           Fans Coffee & Bakery se compromete a proteger su privacidad y todas
           las personas con cualquier preocupación o pregunta sobre la privacidad
           se les pide que se pongan en contacto con Fans Coffee & Bakery para

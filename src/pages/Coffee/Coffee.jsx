@@ -1,7 +1,7 @@
 import Building from '../Building/Building'
 
-function Home() {
+function Coffee() {
   return <Building />
 }
 
-export default Home
+export default Coffee

@@ -1,8 +1,8 @@
-import './Footer.scss'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
-    <footer className="bg-neutral-100 text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
+    <footer className="bg-neutral-100 text-center text-neutral-600 dark:bg-neutral-700 dark:text-neutral-200 lg:text-left">
       <div className="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
         <div className="mr-12 hidden lg:block">
           <span>Conéctate con nosotros en las redes sociales:</span>
@@ -11,7 +11,7 @@ function Footer() {
         <div className="flex justify-center">
           <a
             href="https://www.facebook.com/fanscoffeebakery/"
-            className="mr-6 text-neutral-600 dark:text-neutral-200"
+            className="mr-6 text-neutral-600 hover:text-green dark:text-neutral-200"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@ function Footer() {
 
           <a
             href="https://www.instagram.com/fanscoffeeandbakery/"
-            className="mr-6 text-neutral-600 dark:text-neutral-200"
+            className="mr-6 text-neutral-600 hover:text-green dark:text-neutral-200"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -46,19 +46,28 @@ function Footer() {
               Productos
             </h6>
             <p className="mb-4">
-              <a href="#!" className="text-neutral-600 dark:text-neutral-200">
+              <Link
+                to="/panaderia"
+                className="text-neutral-600 hover:text-green dark:text-neutral-200"
+              >
                 Panadería
-              </a>
+              </Link>
             </p>
             <p className="mb-4">
-              <a href="#!" className="text-neutral-600 dark:text-neutral-200">
+              <Link
+                to="/pasteleria"
+                className="text-neutral-600 hover:text-green dark:text-neutral-200"
+              >
                 Pastelería
-              </a>
+              </Link>
             </p>
             <p className="mb-4">
-              <a href="#!" className="text-neutral-600 dark:text-neutral-200">
+              <Link
+                to="/cafeteria"
+                className="text-neutral-600 hover:text-green dark:text-neutral-200"
+              >
                 Cafetería
-              </a>
+              </Link>
             </p>
           </div>
           <div className="text-center">
@@ -66,19 +75,20 @@ function Footer() {
               Enlaces útiles
             </h6>
             <p className="mb-4">
-              <a href="#!" className="text-neutral-600 dark:text-neutral-200">
-                Pedidos
-              </a>
-            </p>
-            <p className="mb-4">
-              <a href="#!" className="text-neutral-600 dark:text-neutral-200">
+              <Link
+                to="/nosotros"
+                className="text-neutral-600 hover:text-green dark:text-neutral-200"
+              >
                 Nosotros
-              </a>
+              </Link>
             </p>
             <p className="mb-4">
-              <a href="#!" className="text-neutral-600 dark:text-neutral-200">
-                Formulario de contacto
-              </a>
+              <Link
+                to="/contacto"
+                className="text-neutral-600 hover:text-green dark:text-neutral-200"
+              >
+                Contacto
+              </Link>
             </p>
           </div>
 
@@ -111,10 +121,12 @@ function Footer() {
                   clip-rule="evenodd"
                 />
               </svg>
-              <a href="tel:+34628984413">+ 34 628 984 413</a>
+              <a href="tel:+34628984413" className="hover:text-green">
+                + 34 628 984 413
+              </a>
             </p>
           </div>
-          <div className="text-center">
+          <div className="ps-auto text-center md:ps-0">
             <iframe
               title="google"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.315829639117!2d-3.6768293491456254!3d40.40185366436702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4227f0d51d1505%3A0xbfa018432bd3d379!2sFans%20Coffee%20%26%20Bakery!5e0!3m2!1ses!2ses!4v1620941613287!5m2!1ses!2ses"
@@ -125,10 +137,19 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-neutral-200 p-6 text-center dark:bg-neutral-700">
-        <span>
-          © 2021 Copyright: FANS COFFEE & BAKERY - FANS COFFEE FRIENDS S.L.L.
-          Todos los derechos reservados.
+      <div className="grid grid-rows-1 bg-neutral-200 p-6 text-center dark:bg-neutral-700 md:grid-cols-2 md:text-left">
+        <span className="">
+          <Link to="/privacidad" className="hover:text-green">
+            Politicas de privacidad
+          </Link>{' '}
+          |{' '}
+          <Link to="/legal" className="hover:text-green">
+            Aviso Legal
+          </Link>
+        </span>
+        <span className="">
+          © 2023 Copyright FANS COFFEE FRIENDS S.L.L. Todos los derechos
+          reservados.
         </span>
       </div>
     </footer>

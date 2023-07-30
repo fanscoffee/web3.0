@@ -19,7 +19,7 @@ function Header() {
 
   return (
     <header className="fixed left-0 top-0 z-10 w-full bg-neutral-100 text-center text-neutral-600 shadow-lg dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
-      <div className="items-center justify-between px-7 py-4 md:flex md:px-10">
+      <div className="items-center justify-between px-7 pb-2 md:flex md:px-10">
         <div className="flex cursor-pointer items-center text-2xl font-bold">
           <span className="mr-1 pt-2 text-3xl">
             <img

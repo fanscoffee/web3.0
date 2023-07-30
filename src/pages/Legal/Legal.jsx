@@ -7,7 +7,7 @@ function Legal() {
   }, [])
 
   return (
-    <div className="container m-auto mb-5  mt-[5rem] max-w-[800px] pt-7 lg:mt-[7rem]">
+    <div className="container m-auto mb-5  mt-[5rem] max-w-[800px] pt-7 lg:mt-[6rem]">
       <Helmet>
         <title>Aviso Legal - Fans Coffee & Bakery</title>
         <meta name="title" content="Aviso Legal - Fans Coffee & Bakery" />

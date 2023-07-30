@@ -62,7 +62,7 @@ export default function Contact() {
     }
   }
   return (
-    <div className="mb-5  mt-[5rem] lg:mt-[7rem]">
+    <div className="mb-5  mt-[5rem] lg:mt-[6rem]">
       <Helmet>
         <title>Contacto General - Fans Coffee & Bakery</title>
         <meta name="title" content="Contacto General - Fans Coffee & Bakery" />
@@ -173,7 +173,7 @@ export default function Contact() {
               que facilito. He leído y acepto la{' '}
               <a
                 href="/privacidad"
-                className="text-emerald-600 hover:text-emerald-500 dark:text-emerald-400"
+                className="text-green hover:text-dark-green dark:text-green"
               >
                 Política de privacidad
               </a>
@@ -183,7 +183,7 @@ export default function Contact() {
 
           <button
             type="submit"
-            className="font-small hover:text-md rounded-full bg-emerald-700 px-8 py-4 text-sm  text-white transition-all hover:bg-emerald-800 hover:font-medium"
+            className="font-small hover:text-md rounded-full bg-green px-8 py-4 text-sm text-white transition-all hover:bg-dark-green hover:font-medium"
             onClick={showAlert}
           >
             ENVIAR

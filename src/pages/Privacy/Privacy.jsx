@@ -1,5 +1,6 @@
 import Helmet from 'react-helmet'
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 function Privacy() {
   useEffect(() => {
@@ -7,7 +8,7 @@ function Privacy() {
   }, [])
 
   return (
-    <div className="container m-auto mb-5  mt-[5rem] max-w-[800px] pt-7 lg:mt-[7rem]">
+    <div className="container m-auto mb-5  mt-[5rem] max-w-[800px] pt-7 lg:mt-[6rem]">
       <Helmet>
         <title>Privacidad - Fans Coffee & Bakery</title>
         <meta name="title" content="Privacidad - Fans Coffee & Bakery" />
@@ -45,9 +46,11 @@ function Privacy() {
           una mayor aclaración.
         </p>
         <div className="my-8 text-center">
-          <button className="rounded-full bg-gradient-to-r from-dark-green to-green px-8 py-4 text-white transition-all duration-300 hover:scale-[1.1] hover:from-green hover:to-dark-green">
-            Contacto
-          </button>
+          <Link to={'/contacto'}>
+            <button className="font-small hover:text-md rounded-full bg-green px-8 py-4 text-sm  text-white transition-all hover:bg-dark-green hover:font-medium">
+              CONTACTO
+            </button>
+          </Link>
         </div>
       </div>
     </div>

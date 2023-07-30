@@ -90,6 +90,14 @@ function Footer() {
                 Contacto
               </Link>
             </p>
+            <p className="mb-4">
+              <Link
+                to="/unete"
+                className="text-neutral-600 hover:text-green dark:text-neutral-200"
+              >
+                Trabaja con nosotros
+              </Link>
+            </p>
           </div>
 
           <div className="text-center">

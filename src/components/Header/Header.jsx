@@ -11,8 +11,8 @@ function Header() {
   ]
   let [open, setOpen] = useState(false)
   return (
-    <header className="left-0 top-0 w-full h-screen bg-center bg-fixed bg-cover bg-no-repeat bg-[url('https://media.istockphoto.com/id/1197065241/es/foto/tazas-de-capuchino-de-caf%C3%A9-arom%C3%A1tico.jpg?s=612x612&w=0&k=20&c=C_yFoJQssAPjP6zjuE3H6M_gUQpxDuZk36PBN2P3LnQ=')] text-center text-neutral-600 shadow-md dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
-      <div className="items-center justify-between px-7 py-4 md:flex md:px-10">
+    <header className="fixed left-0 top-0 z-10 w-full bg-neutral-100 text-center text-neutral-600 shadow-lg dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
+      <div className="items-center justify-between px-7 pb-2 md:flex md:px-10">
         <div className="flex cursor-pointer items-center text-2xl font-bold">
           <span className="mr-1 pt-2 text-3xl">
             <img

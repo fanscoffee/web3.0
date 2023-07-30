@@ -9,6 +9,7 @@ import Legal from './pages/Legal/Legal'
 import NotFound from './pages/NotFound/NotFound'
 import Pastry from './pages/Pastry/Pastry'
 import Privacy from './pages/Privacy/Privacy'
+import Join from './pages/Join/Join'
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -28,6 +29,7 @@ function App() {
         <Route path="/cafeteria" element={<Coffee />} />
         <Route path="/pasteleria" element={<Pastry />} />
         <Route path="/nosotros" element={<About />} />
+        <Route path='/unete' element={<Join />}/>
       </Route>,
     ),
   )

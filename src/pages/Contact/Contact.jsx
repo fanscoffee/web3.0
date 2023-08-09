@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import Helmet from 'react-helmet'
 import emailjs from 'emailjs-com'
 import PhoneInput from 'react-phone-number-input'
@@ -25,18 +25,18 @@ export default function Contact() {
       )
       .then(
         (result) => {
-          console.log(result.text)
+          throw result.text
         },
         (error) => {
-          console.log(error.text)
+          throw error.text
         },
       )
     e.target.reset()
   }
   const check = () => {
-    let agree = document.querySelector('#contactFormAgree')
+    const agree = document.querySelector('#contactFormAgree')
 
-    let status = agree.checked ? true : false
+    const status = !!agree.checked
     setCheck(status)
   }
 
@@ -84,16 +84,16 @@ export default function Contact() {
             <div className="mb 3">
               <label htmlFor="tipo" className="text-md my-2 block font-medium">
                 Tipo
+                <select
+                  name="tipo"
+                  id="tipo"
+                  defaultChecked
+                  className="focus:shadow-outline w-full rounded border py-1 leading-tight shadow focus:outline-none"
+                >
+                  <option value="consulta">Consulta</option>
+                  <option value="reserva">Reserva</option>
+                </select>
               </label>
-              <select
-                name="tipo"
-                id="tipo"
-                defaultChecked
-                className="focus:shadow-outline w-full rounded border py-1 leading-tight shadow focus:outline-none"
-              >
-                <option value="consulta">Consulta</option>
-                <option value="reserva">Reserva</option>
-              </select>
             </div>
             <div className="mb-3">
               <label
@@ -101,16 +101,16 @@ export default function Contact() {
                 className="text-md my-2 block font-medium"
               >
                 Ingresa tu nombre
+                <input
+                  type="text"
+                  name="nombre"
+                  className="focus:shadow-outline w-full  rounded border py-1 leading-tight shadow focus:outline-none"
+                  id="nombre"
+                  autoComplete="off"
+                  placeholder="Nombre"
+                  required
+                />
               </label>
-              <input
-                type="text"
-                name="nombre"
-                className="focus:shadow-outline w-full  rounded border py-1 leading-tight shadow focus:outline-none"
-                id="nombre"
-                autoComplete="off"
-                placeholder="Nombre"
-                required
-              />
             </div>
             <div className="mb-3">
               <label
@@ -118,45 +118,45 @@ export default function Contact() {
                 className="text-md my-2 block font-medium"
               >
                 Ingresa tu movíl
+                <PhoneInput
+                  international
+                  id="telefono"
+                  autoComplete="off"
+                  defaultCountry="ES"
+                  value={value}
+                  onChange={setValue}
+                  name="telefono"
+                  className="focus:shadow-outline w-full  rounded border py-1 leading-tight shadow  focus:outline-none"
+                />
               </label>
-
-              <PhoneInput
-                international
-                autoComplete="off"
-                defaultCountry="ES"
-                value={value}
-                onChange={setValue}
-                name="telefono"
-                className="focus:shadow-outline w-full  rounded border py-1 leading-tight shadow  focus:outline-none"
-              />
             </div>
             <label htmlFor="email" className="text-md my-2 block font-medium">
               Ingresa tu correo electrónico
+              <input
+                type="email"
+                className="focus:shadow-outline w-full  rounded border py-1 leading-tight shadow  focus:outline-none"
+                id="email"
+                aria-describedby="emailHelp"
+                name="email"
+                autoComplete="off"
+                placeholder="Email"
+                required
+              />
             </label>
-            <input
-              type="email"
-              className="focus:shadow-outline w-full  rounded border py-1 leading-tight shadow  focus:outline-none"
-              id="email"
-              aria-describedby="emailHelp"
-              name="email"
-              autoComplete="off"
-              placeholder="Email"
-              required
-            />
           </div>
           <div className="mb-3">
             <label htmlFor="mensaje" className="text-md my-2 block font-medium">
               ¿Podrías proporcionarnos más información al respecto?
+              <textarea
+                className="focus:shadow-outline w-full  rounded border py-1 leading-tight shadow focus:outline-none"
+                autoComplete="off"
+                id="mensaje"
+                name="mensaje"
+                rows="3"
+                placeholder="Información"
+                required
+              />
             </label>
-            <textarea
-              className="focus:shadow-outline w-full  rounded border py-1 leading-tight shadow focus:outline-none"
-              autoComplete="off"
-              id="mensaje"
-              name="mensaje"
-              rows="3"
-              placeholder="Información"
-              required
-            ></textarea>
           </div>
 
           <div className="mb-3">
@@ -208,7 +208,7 @@ export default function Contact() {
             allowFullScreen=""
             loading="lazy"
             className="my-2"
-          ></iframe>
+          />
 
           <p className="my-2 border-y py-2">
             <strong>Teléfono:</strong>

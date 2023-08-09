@@ -1,7 +1,7 @@
-import Header from '../../components/Header/Header'
-import Footer from '../../components/Footer/Footer'
 import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
+import Header from '../../components/Header/Header'
+import Footer from '../../components/Footer/Footer'
 
 function NotFound() {
   return (

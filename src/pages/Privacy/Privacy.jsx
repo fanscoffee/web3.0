@@ -46,7 +46,7 @@ function Privacy() {
           una mayor aclaración.
         </p>
         <div className="my-8 text-center">
-          <Link to={'/contacto'}>
+          <Link to="/contacto">
             <button className="font-small hover:text-md rounded-full bg-green px-8 py-4 text-sm  text-white transition-all hover:bg-dark-green hover:font-medium">
               CONTACTO
             </button>

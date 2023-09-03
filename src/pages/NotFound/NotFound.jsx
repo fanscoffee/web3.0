@@ -1,9 +1,13 @@
+import { useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
 
 function NotFound() {
+  useEffect(() => {
+    window.scroll(0, 0)
+  }, [])
   return (
     <div className="text-center">
       <Header />

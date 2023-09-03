@@ -1,6 +1,10 @@
+import { useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 
 function Join() {
+  useEffect(() => {
+    window.scroll(0, 0)
+  }, [])
   return (
     <div className="text-center">
       <Helmet>

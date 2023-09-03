@@ -34,7 +34,7 @@ function App() {
     ),
   )
   return (
-    <div className="text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200">
+    <div className="text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 main">
       <RouterProvider router={router} />
     </div>
   )

@@ -1,7 +1,11 @@
+import { useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 
 function Building() {
+  useEffect(() => {
+    window.scroll(0, 0)
+  }, [])
   return (
     <div className="text-center">
       <Helmet>

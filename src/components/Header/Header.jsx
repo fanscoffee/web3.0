@@ -1,16 +1,17 @@
-import { useState } from 'react'
-import { useLocation } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { useLocation, Link } from 'react-router-dom'
 import { FaSun, FaMoon } from 'react-icons/fa'
 import useDarkMode from '../../hooks/useDarkMode'
-import { Link } from 'react-router-dom'
 import './Header.scss'
 
 function Header() {
   const [darkMode, setDarkMode] = useDarkMode()
+  const [open, setOpen] = useState(false)
   const handleMode = () => setDarkMode(!darkMode)
-
-  const location = useLocation()
-  console.log('THIS IS THE LOCALTION --->', location.pathname)
+  const { pathname } = useLocation()
+  useEffect(() => {
+    setOpen(false)
+  }, [pathname])
 
   const links = [
     { name: 'Inicio', link: '/' },
@@ -19,9 +20,8 @@ function Header() {
     { name: 'Cafeteria', link: '/cafeteria' },
     { name: 'Contacto', link: '/contacto' },
   ]
-  let [open, setOpen] = useState(false)
 
-  return location.pathname === '/' ? (
+  return pathname === '/' ? (
     <header className="fixed left-0 top-0 z-10 w-full text-center shadow-lg md:bg-transparent lg:text-left  ">
       <div className="items-center justify-between px-7 pb-2 md:flex md:px-10">
         <div className="flex cursor-pointer items-center text-2xl font-bold">
@@ -44,7 +44,7 @@ function Header() {
         </div>
         <ul
           className={`absolute left-0 z-[-1] w-full bg-black/75 pb-12 pl-1 text-neutral-200 dark:text-neutral-200 md:static md:z-auto md:mt-5 md:flex md:w-auto md:items-center md:bg-transparent md:pb-0 md:pl-0 ${
-            open ? 'top-30 opacity-100' : 'top-[-490px]'
+            open ? 'top-[100%] opacity-100' : 'top-[-490px]'
           } opacity-0 md:opacity-100 `}
         >
           {links.map((link) => (
@@ -95,7 +95,7 @@ function Header() {
         </div>
         <ul
           className={`absolute left-0 z-[-1] w-full bg-black/75 pb-12 pl-1 text-white dark:text-neutral-200 md:static md:z-auto md:mt-5 md:flex md:w-auto md:items-center md:bg-transparent md:pb-0 md:pl-0 md:text-neutral-600 ${
-            open ? 'top-30 opacity-100' : 'top-[-490px]'
+            open ? 'top-[100%] opacity-100' : 'top-[-490px]'
           } opacity-0 md:opacity-100 `}
         >
           {links.map((link) => (

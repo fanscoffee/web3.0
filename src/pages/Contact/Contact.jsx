@@ -104,7 +104,7 @@ export default function Contact() {
                 <input
                   type="text"
                   name="nombre"
-                  className="focus:shadow-outline w-full  rounded border py-1 leading-tight shadow focus:outline-none"
+                  className="focus:shadow-outline w-full rounded border p-1 leading-tight shadow focus:outline-none"
                   id="nombre"
                   autoComplete="off"
                   placeholder="Nombre"
@@ -126,7 +126,7 @@ export default function Contact() {
                   value={value}
                   onChange={setValue}
                   name="telefono"
-                  className="focus:shadow-outline w-full  rounded border py-1 leading-tight shadow  focus:outline-none"
+                  className="focus:shadow-outline w-full rounded border bg-white p-2 leading-tight shadow focus:outline-none"
                 />
               </label>
             </div>
@@ -134,7 +134,7 @@ export default function Contact() {
               Ingresa tu correo electrónico
               <input
                 type="email"
-                className="focus:shadow-outline w-full  rounded border py-1 leading-tight shadow  focus:outline-none"
+                className="focus:shadow-outline w-full  rounded border p-1 leading-tight shadow  focus:outline-none"
                 id="email"
                 aria-describedby="emailHelp"
                 name="email"
@@ -148,7 +148,7 @@ export default function Contact() {
             <label htmlFor="mensaje" className="text-md my-2 block font-medium">
               ¿Podrías proporcionarnos más información al respecto?
               <textarea
-                className="focus:shadow-outline w-full  rounded border py-1 leading-tight shadow focus:outline-none"
+                className="focus:shadow-outline w-full  rounded border p-1 leading-tight shadow focus:outline-none"
                 autoComplete="off"
                 id="mensaje"
                 name="mensaje"
@@ -201,19 +201,18 @@ export default function Contact() {
           <p className="mt-2">
             <strong>Dirección:</strong> Calle Doctor Esquerdo 180, 28007, Madrid
           </p>
+          <p className="my-2 py-2">
+            <strong>Teléfono:</strong>
+            <a href="tel:+34628984413">(+34) 628 984 413</a>
+          </p>
           <iframe
             title="google"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.315829639117!2d-3.6768293491456254!3d40.40185366436702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4227f0d51d1505%3A0xbfa018432bd3d379!2sFans%20Coffee%20%26%20Bakery!5e0!3m2!1ses!2ses!4v1620941613287!5m2!1ses!2ses"
-            style={{ border: 0 }}
+            style={{ border: 0, borderRadius: 10 }}
             allowFullScreen=""
             loading="lazy"
             className="my-2"
           />
-
-          <p className="my-2 border-y py-2">
-            <strong>Teléfono:</strong>
-            <a href="tel:+34628984413">(+34) 628 984 413</a>
-          </p>
         </div>
       </div>
     </div>

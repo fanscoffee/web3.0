@@ -4,61 +4,87 @@ function ContainerCards() {
       <p className="text-4xl font-semibold">Recomendados</p>
       <div className="mt-2 flex h-80 w-auto items-center space-x-6 overflow-x-auto">
         <div className="h-72 w-60 flex-none rounded-lg shadow-md">
-          <div className="h-4/6 w-full rounded-t-lg bg-[url(/images/croasant.jpg)] bg-cover bg-center"></div>
-          <div className=" h-2/6 w-full rounded-b-lg ">
-            <p className="px-4 py-2 text-xl font-bold ">Croisant</p>
-            <p className="px-4 text-sm ">Hecho con masa madre</p>
+          <div className="h-4/6 w-full rounded-t-lg bg-[url(/images/croissant.jpeg)] bg-cover bg-center" />
+          <div className=" h-2/6 w-full rounded-b-lg bg-beige">
+            <p className="px-4 py-2 text-center text-xl font-bold">Croissant</p>
+            <p className="px-4 text-sm ">
+              Suave y tierno se combinan para crear la experiencia perfecta.
+            </p>
           </div>
         </div>
         <div className="h-72 w-60 flex-none rounded-lg shadow-md">
-          <div className="h-4/6 w-full rounded-t-lg bg-[url(/images/malteada.jpg)] bg-cover bg-center"></div>
-          <div className=" h-2/6 w-full rounded-b-lg ">
-            <p className="px-4 py-2 text-xl font-bold ">Malteadas</p>
-            <p className="px-4 text-sm ">Las más refrescantes</p>
-          </div>
-        </div>
-
-        <div className="h-72 w-60 flex-none rounded-lg shadow-md">
-          <div className="h-4/6 w-full rounded-t-lg bg-[url(/images/tartaleta.jpg)] bg-cover bg-center"></div>
-          <div className=" h-2/6 w-full rounded-b-lg ">
-            <p className="px-4 py-2 text-xl font-bold ">Tartaleta</p>
-            <p className="px-4 text-sm ">Como esta no hay dos</p>
-          </div>
-        </div>
-        <div className="h-72 w-60 flex-none rounded-lg shadow-md">
-          <div className="h-4/6 w-full rounded-t-lg bg-[url(/images/coffee.jpg)] bg-cover bg-center"></div>
-          <div className=" h-2/6 w-full rounded-b-lg ">
-            <p className="px-4 py-2 text-xl font-bold ">Cafes</p>
-            <p className="px-4 text-sm ">De clase mundial</p>
-          </div>
-        </div>
-        <div className="h-72 w-60 flex-none rounded-lg shadow-md">
-          <div className="h-4/6 w-full rounded-t-lg bg-[url(/images/torta_chocolate.jpg)] bg-cover bg-center"></div>
-          <div className=" h-2/6 w-full rounded-b-lg ">
-            <p className="px-4 py-2 text-xl font-bold ">Pastel de Chocolate</p>
-            <p className="px-4 text-sm ">Hara volar tu cabeza</p>
-          </div>
-        </div>
-        <div className="h-72 w-60 flex-none rounded-lg shadow-md">
-          <div className="h-4/6 w-full rounded-t-lg bg-[url(/images/donout.jpg)] bg-cover bg-center"></div>
-          <div className=" h-2/6 w-full rounded-b-lg ">
-            <p className="px-4 py-2 text-xl font-bold ">Donas</p>
-            <p className="px-4 text-sm ">Esponjosas</p>
-          </div>
-        </div>
-        <div className="h-72 w-60 flex-none rounded-lg shadow-md">
-          <div className="h-4/6 w-full rounded-t-lg bg-[url(/images/empanada.jpg)] bg-cover bg-center"></div>
-          <div className=" h-2/6 w-full rounded-b-lg ">
-            <p className="px-4 py-2 text-xl font-bold ">Empanadas</p>
-            <p className="px-4 text-sm ">Variedad de rellenos</p>
+          <div className="h-4/6 w-full rounded-t-lg bg-[url(/images/batidos.jpeg)] bg-cover bg-center" />
+          <div className=" h-2/6 w-full rounded-b-lg bg-beige">
+            <p className="px-4 py-2 text-center text-xl font-bold">Batidos</p>
+            <p className="px-4 text-sm ">
+              Una explosión de frescura y sabor en cada sorbo.
+            </p>
           </div>
         </div>
 
         <div className="h-72 w-60 flex-none rounded-lg shadow-md">
-          <div className="h-4/6 w-full rounded-t-lg bg-[url(/images/torta.jpg)] bg-cover bg-center"></div>
-          <div className=" h-2/6 w-full rounded-b-lg ">
-            <p className="px-4 py-2 text-xl font-bold ">Torta bizcocho</p>
-            <p className="px-4 text-sm ">Como los de la abuela</p>
+          <div className="h-4/6 w-full rounded-t-lg bg-[url(/images/tartaleta.jpg)] bg-cover bg-center" />
+          <div className=" h-2/6 w-full rounded-b-lg bg-beige">
+            <p className="px-4 py-2 text-center text-xl font-bold">
+              Tres Leches
+            </p>
+            <p className="px-4 text-sm ">La dulzura suprema en cada bocado.</p>
+          </div>
+        </div>
+        <div className="h-72 w-60 flex-none rounded-lg shadow-md">
+          <div className="h-4/6 w-full rounded-t-lg bg-[url(/images/cafe.jpeg)] bg-cover bg-center" />
+          <div className=" h-2/6 w-full rounded-b-lg bg-beige">
+            <p className="px-4 py-2 text-center text-xl font-bold">Cafés</p>
+            <p className="px-4 text-sm ">Sabor inigualable en cada taza.</p>
+          </div>
+        </div>
+        <div className="h-72 w-60 flex-none rounded-lg shadow-md">
+          <div className="h-4/6 w-full rounded-t-lg bg-[url(/images/tarta-queso.jpeg)] bg-cover bg-center" />
+          <div className=" h-2/6 w-full rounded-b-lg bg-beige">
+            <p className="px-4 py-2 text-center text-xl font-bold">
+              Tarta de Queso
+            </p>
+            <p className="px-4 text-sm ">
+              El equilibrio perfecto de suavidad y sabor.
+            </p>
+          </div>
+        </div>
+        <div className="h-72 w-60 flex-none rounded-lg shadow-md">
+          <div className="h-4/6 w-full rounded-t-lg bg-[url(/images/palmeras-chocolate.jpeg)] bg-cover bg-center" />
+          <div className=" h-2/6 w-full rounded-b-lg bg-beige">
+            <p className="px-4 py-2 text-center text-lg font-bold">
+              Palmeritas de chocolate
+            </p>
+            <p className="px-4 text-sm ">
+              Cubierta de chocolate, un placer para los sentidos.
+            </p>
+          </div>
+        </div>
+        <div className="h-72 w-60 flex-none rounded-lg shadow-md">
+          <div className="h-4/6 w-full rounded-t-lg bg-[url(/images/empanada.jpeg)] bg-cover bg-center" />
+          <div className=" h-2/6 w-full rounded-b-lg bg-beige">
+            <p className="px-4 py-2 text-center text-xl font-bold">Empanadas</p>
+            <p className="px-4 text-sm ">Un viaje en cada bocado.</p>
+          </div>
+        </div>
+
+        <div className="h-72 w-60 flex-none rounded-lg shadow-md">
+          <div className="h-4/6 w-full rounded-t-lg bg-[url(/images/tostadas.jpeg)] bg-cover bg-center" />
+          <div className=" h-2/6 w-full rounded-b-lg bg-beige">
+            <p className="px-4 py-2 text-center text-xl font-bold">Tostadas</p>
+            <p className="px-4 text-sm ">
+              Irresistible frescura y sabor sobre un pan artesanal.
+            </p>
+          </div>
+        </div>
+
+        <div className="h-72 w-60 flex-none rounded-lg shadow-md">
+          <div className="h-4/6 w-full rounded-t-lg bg-[url(/images/cachito.jpeg)] bg-cover bg-center" />
+          <div className=" h-2/6 w-full rounded-b-lg bg-beige">
+            <p className="px-4 py-2 text-center text-xl font-bold">Cachito</p>
+            <p className="px-4 text-sm ">
+              Un sorbo de energía y sabor en cada taza.
+            </p>
           </div>
         </div>
       </div>

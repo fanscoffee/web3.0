@@ -1,7 +1,11 @@
+import { useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 
 function Building() {
+  useEffect(() => {
+    window.scroll(0, 0)
+  }, [])
   return (
     <div className="text-center">
       <Helmet>
@@ -9,17 +13,15 @@ function Building() {
         <meta name="title" content="En construcción - Fans Coffee & Bakery" />
         <meta
           name="description"
-          content="Nuestra pagina esta bajo construccion, sabiendo esto aun puedes
-          contactarte con nosotros a travez de nuestra pagina de contacto
-          rellenando el formulario y te atenderemos tan pronto como sea posible."
+          content="Nuestra página esta bajo construcción, sabiendo esto aún puedes contactarte con nosotros a través de nuestra página de contacto rellenando el formulario y te atenderemos tan pronto como sea posible."
         />
       </Helmet>
       <h1 className="mx-auto mt-[5rem] pt-14 text-3xl font-bold">
         En Construcción
       </h1>
       <p className="mx-auto mt-5 max-w-lg text-xl">
-        Nuestra pagina esta bajo construccion, sabiendo esto aun puedes
-        contactarte con nosotros a travez de nuestra pagina de contacto
+        Nuestra página esta bajo construcción, sabiendo esto aún puedes
+        contactarte con nosotros a través de nuestra página de contacto
         rellenando el formulario y te atenderemos tan pronto como sea posible.
       </p>
 

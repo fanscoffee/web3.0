@@ -6,7 +6,7 @@ function Footer() {
     <footer className="text-center text-neutral-600 dark:text-neutral-200">
       <div className="flex items-center justify-center">
         <a
-          href="https://www.instagram.com/fanscoffeeandbakery/"
+          href="https://www.instagram.com/fanscoffee.es/"
           className="text-neutral-600 hover:text-green dark:text-neutral-200"
         >
           <BsInstagram className="text-3xl" />

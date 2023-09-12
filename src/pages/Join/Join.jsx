@@ -79,7 +79,7 @@ function Join() {
         ¡Bienvenido/a a nuestro equipo!
       </p>
 
-      <div className="container m-auto mb-5  max-w-[800px] ">
+      <div className="container m-auto mb-12  max-w-[800px] ">
         <a
           href="mailto:fanscoffee22@gmail.com?subject=CV enviado desde WEB - [Nombre]&body=Recuerda adjuntar tu CV y contarnos un poco sobre ti."
           className="font-small hover:text-md rounded-full bg-green px-8 py-4 text-sm text-white transition-all hover:bg-dark-green hover:font-medium"

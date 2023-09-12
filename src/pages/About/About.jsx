@@ -6,7 +6,7 @@ function About() {
   }, [])
 
   return (
-    <div className="text-center">
+    <div className="mb-12 text-center">
       <h1 className="mx-auto mt-[5rem] pt-14 text-3xl font-bold">Nosotros</h1>
       <p className="mx-auto mt-5 max-w-xl text-xl">
         Somos más que una panadería, somos una experiencia. Nos enorgullece ser

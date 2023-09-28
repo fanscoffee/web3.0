@@ -4,6 +4,7 @@ import emailjs from 'emailjs-com'
 import PhoneInput from 'react-phone-number-input'
 import 'react-phone-number-input/style.css'
 import Swal from 'sweetalert2'
+import { Link } from 'react-router-dom'
 
 export default function Contact() {
   const [Check, setCheck] = useState(false)
@@ -171,12 +172,12 @@ export default function Contact() {
             <label className="mx-1" htmlFor="contactFormAgree">
               Doy mi consentimiento para el tratamiento de los datos personales
               que facilito. He leído y acepto la{' '}
-              <a
-                href="/privacidad"
+              <Link
+                to="/privacidad"
                 className="text-green hover:text-dark-green dark:text-green"
               >
                 Política de privacidad
-              </a>
+              </Link>
               .
             </label>
           </div>

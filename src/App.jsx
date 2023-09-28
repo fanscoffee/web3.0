@@ -1,6 +1,6 @@
 import './App.scss'
 import {
-  createBrowserRouter,
+  createHashRouter,
   createRoutesFromElements,
   Route,
   RouterProvider,
@@ -18,7 +18,7 @@ import Privacy from './pages/Privacy/Privacy'
 import Join from './pages/Join/Join'
 
 function App() {
-  const router = createBrowserRouter(
+  const router = createHashRouter(
     createRoutesFromElements(
       <Route path="/" element={<Root />} errorElement={<NotFound />}>
         <Route index element={<Home />} />
@@ -34,7 +34,7 @@ function App() {
     ),
   )
   return (
-    <div className="text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 main">
+    <div className="main text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200">
       <RouterProvider router={router} />
     </div>
   )

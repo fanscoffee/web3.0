@@ -1,6 +1,6 @@
 import './App.scss'
 import {
-  createHashRouter,
+  createBrowserRouter,
   createRoutesFromElements,
   Route,
   RouterProvider,
@@ -18,7 +18,7 @@ import Privacy from './pages/Privacy/Privacy'
 import Join from './pages/Join/Join'
 
 function App() {
-  const router = createHashRouter(
+  const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<Root />} errorElement={<NotFound />}>
         <Route index element={<Home />} />

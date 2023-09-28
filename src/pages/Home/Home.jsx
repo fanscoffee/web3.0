@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import BigBackground from '../../components/BigBackground/BigBackground'
 import ContainerCards from '../../components/ContainerCards/ContainerCards'
+import Carousel from '../../components/Carousel/Carousel'
 
 function Home() {
   useEffect(() => {
@@ -10,6 +11,7 @@ function Home() {
     <>
       <BigBackground />
       <ContainerCards />
+      {/* <Carousel /> */}
     </>
   )
 }

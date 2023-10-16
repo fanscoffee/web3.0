@@ -65,13 +65,13 @@ export default function Contact() {
   return (
     <div className="mb-5  mt-[5rem] lg:mt-[6rem]">
       <Helmet>
-        <title>Contacto General - Fans Coffee & Bakery</title>
-        <meta name="title" content="Contacto General - Fans Coffee & Bakery" />
+        <title>Contacto General - Fans Coffee</title>
+        <meta name="title" content="Contacto General - Fans Coffee" />
         <meta
           name="description"
           content="Pagina de contacto donde podrás encontrar la información para comunicarte con nosotros."
         />
-        <link rel="canonical" href="https://fanscoffeebakery.com/contacto" />
+        <link rel="canonical" href="https://fanscoffee.es/contacto" />
       </Helmet>
       <div className="grid-1 grid gap-8 md:grid-cols-2">
         <form

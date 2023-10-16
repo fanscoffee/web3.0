@@ -8,11 +8,8 @@ function Join() {
   return (
     <div className="text-center">
       <Helmet>
-        <title>Trabaja con nosotros - Fans Coffee & Bakery</title>
-        <meta
-          name="title"
-          content="Trabaja con nosotros - Fans Coffee & Bakery"
-        />
+        <title>Trabaja con nosotros - Fans Coffee</title>
+        <meta name="title" content="Trabaja con nosotros - Fans Coffee" />
         <meta
           name="description"
           content="Si eres una persona responsable, proactiva y puedes adaptarte a nuevas situaciones, queremos conocerte."
@@ -26,8 +23,8 @@ function Join() {
         panadería y la excelencia culinaria!
       </p>
       <p className="mx-auto mt-5 max-w-xl text-xl">
-        En Fans Coffee & Bakery (En adelante FANS), no solo creamos de
-        deliciosos productos y bebidas, sino que también cultivamos experiencias
+        En Fans Coffee & (En adelante FANS), no solo creamos de deliciosos
+        productos y bebidas, sino que también cultivamos experiencias
         inolvidables para nuestros clientes. Sabemos que nuestros empleados son
         la base de nuestro éxito, y es por eso que buscamos personas
         comprometidas, creativas y llenas de energía para unirse a nuestra

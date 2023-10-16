@@ -9,8 +9,8 @@ function Building() {
   return (
     <div className="text-center">
       <Helmet>
-        <title>En Construcción - Fans Coffee & Bakery</title>
-        <meta name="title" content="En construcción - Fans Coffee & Bakery" />
+        <title>En Construcción - Fans Coffee</title>
+        <meta name="title" content="En construcción - Fans Coffee" />
         <meta
           name="description"
           content="Nuestra página esta bajo construcción, sabiendo esto aún puedes contactarte con nosotros a través de nuestra página de contacto rellenando el formulario y te atenderemos tan pronto como sea posible."

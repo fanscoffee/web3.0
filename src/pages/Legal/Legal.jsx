@@ -9,13 +9,13 @@ function Legal() {
   return (
     <div className="container m-auto mb-5  mt-[5rem] max-w-[800px] pt-7 lg:mt-[6rem]">
       <Helmet>
-        <title>Aviso Legal - Fans Coffee & Bakery</title>
-        <meta name="title" content="Aviso Legal - Fans Coffee & Bakery" />
+        <title>Aviso Legal - Fans Coffee</title>
+        <meta name="title" content="Aviso Legal - Fans Coffee" />
         <meta
           name="description"
-          content="Una visión general de las políticas de privacidad de Fans Coffee & Bakery con información sobre su sitio web. Al visitar este sitio web, usted acepta las siguientes condiciones de uso."
+          content="Una visión general de las políticas de privacidad de Fans Coffee con información sobre su sitio web. Al visitar este sitio web, usted acepta las siguientes condiciones de uso."
         />
-        <link rel="canonical" href="https://fanscoffeebakery.com/privacidad" />
+        <link rel="canonical" href="https://fanscoffee.es/privacidad" />
       </Helmet>
       <h1 className="my-5 text-center text-3xl font-bold">AVISO LEGAL</h1>
       <p className="my-2">
